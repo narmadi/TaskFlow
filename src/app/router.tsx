@@ -6,6 +6,7 @@ import DashboardPage from "@/features/dashboard/pages/DashboardPage";
 import LoginPage from "@/features/auth/pages/LoginPage";
 import RegisterPage from "@/features/auth/pages/RegisterPage";
 import ProtectedRoute from "@/features/auth/components/ProtectedRoute";
+import WorkspacesPage from "@/features/workspaces/components/WorkspacesPage";
 
 function PlaceholderPage({ title }: { title: string }) {
   return (
@@ -73,6 +74,10 @@ export const router = createBrowserRouter([
           {
             path: "settings",
             element: <PlaceholderPage title="Settings" />,
+          },
+          {
+            path: "workspaces",
+            element: <WorkspacesPage />,
           },
           {
             path: "*",
